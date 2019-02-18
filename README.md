@@ -12,6 +12,11 @@ The running order for this block's katas is:
 6. getTweetData
 7. herdTheBabies
 8. rotateArray
+9. tillAddition
+10. changeCalculator
+11. counterSpy
+12. validTriangles
+13. morseCode
 
 ## Instructions
 
