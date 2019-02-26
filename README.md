@@ -30,7 +30,7 @@ Each kata should be completed with full TDD. Every morning you should start a ne
 
   ```
   $ git clone <your fork's URL>
-  $ cd CORE-B1-katas
+  $ cd FUN-katas
   ```
 
 3. Run this command in your terminal:
