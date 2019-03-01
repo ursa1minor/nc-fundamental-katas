@@ -33,15 +33,10 @@ Each kata should be completed with full TDD. Every morning you should start a ne
   $ cd FUN-katas
   ```
 
-3. Run this command in your terminal:
-
-`$ echo "mocha **/*.spec.js" > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit`
+3. Make sure you've navigated into the folder and install all dependecies using `npm install`. You also have access to an npm script to run tests (`npm test`). Try to spend an hour each morning working on a kata. It will give you the edge when you come to do tech tests for your job applications
 
 
-4. Make sure you've navigated into the folder and install all dependecies using `npm install`. You also have access to an npm script to run tests (`npm test`). Try to spend an hour each morning working on a kata. It will give you the edge when you come to do tech tests for your job applications
-
-
-5. Work on the kata and commit changes as needed. When you are happy with your solution, push all your changes to your forked repo. You should push to your fork frequently but as a bare minimum please make sure it's up to date with last week's kata solutions before Monday morning each week:
+4. Work on the kata and commit changes as needed. When you are happy with your solution, push all your changes to your forked repo. You should push to your fork frequently but as a bare minimum please make sure it's up to date with last week's kata solutions before Monday morning each week:
 
   ```
   $ git push origin master
