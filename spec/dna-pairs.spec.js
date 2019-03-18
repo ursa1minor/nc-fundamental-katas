@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { dnaPairs } = require('../dnaPairs');
+const { dnaPairs } = require('../dna-pairs');
 
 describe('dnaPairs()', () => {
   it('', () => {

@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { morseCode } = require('../morseCode');
+const { morseCode } = require('../morse-code');
 
 describe('morseCode()', () => {
   it('', () => {

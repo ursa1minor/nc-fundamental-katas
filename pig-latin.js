@@ -1,5 +1,5 @@
 // Please do not change the name of this function
-function pigLatin (str) {
+function pigLatin(str) {
   // Your code here
 };
 

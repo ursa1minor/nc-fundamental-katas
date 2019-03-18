@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { counterSpy } = require('../counterSpy');
+const { counterSpy } = require('../counter-spy');
 
 describe('counterSpy()', () => {
   it('', () => {

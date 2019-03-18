@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { tillAddition } = require('../tillAddition');
+const { tillAddition } = require('../till-addition');
 
 describe('tillAddition()', () => {
   it('', () => {

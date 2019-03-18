@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { calculateDivisors } = require('../calculateDivisors');
+const { calculateDivisors } = require('../calculate-divisors');
 
 describe('calculateDivisors()', () => {
   it('', () => {
