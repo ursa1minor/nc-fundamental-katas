@@ -9,7 +9,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "echo Gold star for you ⭐️",
+      "commit-msg": "echo Gold star for you ⭐️"
     }
   },
   "repository": {
