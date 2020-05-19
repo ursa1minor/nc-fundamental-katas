@@ -3,4 +3,4 @@ function calculateDivisors(num) {
   // Your code here
 };
 
-module.exports = { calculateDivisors };
+module.exports = calculateDivisors

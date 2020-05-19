@@ -3,4 +3,4 @@ function foldString (str) {
   // Your code here
 };
 
-module.exports = { foldString };
+module.exports = foldString

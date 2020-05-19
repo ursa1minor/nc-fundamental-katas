@@ -9,23 +9,23 @@ The function takes two arguments; the sentence, and a boolean, true if UpperCame
 You can use these examples to start building up your test suite
 
 ```javascript
-    sentenceToCamelCase("this sentence", true);
-    // -> ThisSentence
+sentenceToCamelCase("this sentence", true);
+// should return "ThisSentence"
 ```
 
 ```javascript
-    sentenceToCamelCase("this sentence", false);
-    // -> thisSentence
+sentenceToCamelCase("this sentence", false);
+// should return "thisSentence"
 ```
 
 ```javascript
-    sentenceToCamelCase("This Bigger strange Sentence", true);
-    // -> ThisBiggerStrangeSentence
+sentenceToCamelCase("This Bigger strange Sentence", true);
+// should return "ThisBiggerStrangeSentence"
 ```
 
 For a further challenge extend your current function or implement another in the same file which takes CamelCase and returns it as a plain english sentence (ending in a full stop).
 
 ```javascript
-    camelToEnglish("thisBiggerStrangeSentence");
-    // -> This bigger strange sentence.
+camelToEnglish("thisBiggerStrangeSentence");
+// should return "This bigger strange sentence"
 ```

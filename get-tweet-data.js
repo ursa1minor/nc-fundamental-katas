@@ -3,4 +3,4 @@ function getTweetData (tweet) {
   // Your code here
 };
 
-module.exports = { getTweetData };
+module.exports = getTweetData;

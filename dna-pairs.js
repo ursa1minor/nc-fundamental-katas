@@ -3,4 +3,4 @@ function dnaPairs (dna) {
   // Your code here
 };
 
-module.exports = { dnaPairs };
+module.exports = dnaPairs;

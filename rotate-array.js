@@ -3,4 +3,4 @@ function rotateArray (arr, num) {
   // Your code here
 };
 
-module.exports = { rotateArray };
+module.exports =  rotateArray;

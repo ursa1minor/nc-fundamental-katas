@@ -1,29 +1,29 @@
-## Pig Latin
+# Pig Latin
 
 In this kata you will write a function that translates English strings into Pig Latin.
 
 To translate to [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin) you take the first consonant (or consecutive consonants) of each word, move it to the end and also append 'ay'. If the word starts with a vowel, just append 'way' at the end.
 
-##### Examples
+## Examples
 
 You can use these examples to start building your test suite.
 
-```javascript
-    pigLatin('northcoders');
-    // -> 'orthcodersnay'
+```js
+pigLatin("northcoders");
+// should return 'orthcodersnay'
 ```
 
-```javascript
-    sample('sheffield');
-    // -> 'effieldshay'
+```js
+sample("sheffield");
+// should return 'effieldshay'
 ```
 
-```javascript
-    sample('algorithm');
-    // -> algorithmway
+```js
+sample("algorithm");
+// should return 'algorithmway'
 ```
 
-```javascript
-    sample('keep on coding');
-    // -> 'eepkay onway odingcay'
+```js
+sample("keep on coding");
+// should return 'eepkay onway odingcay'
 ```

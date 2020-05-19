@@ -1,25 +1,23 @@
-## Herd the babies
+# Herd the babies
 
-Write a function called herdTheBabies which takes a string as its argument. The string will consist of several 'baby' (lowercase) letters, that belong to a 'parent' (uppercase) letter. 
+Write a function called herdTheBabies which takes a string as its argument. The string will consist of several 'baby' (lowercase) letters, that belong to a 'parent' (uppercase) letter.
 
-The function should return a string that is sorted alphabetically, with the parent letter coming before its babies. 
+The function should return a string that is sorted alphabetically, with the parent letter coming before its babies.
 
-EXAMPLES: 
+## Examples
 
-```javascript
-herdTheBabies('aA') //should return 'Aa'
+```js
+herdTheBabies("aA"); // should return 'Aa'
 ```
 
-
-```javascript
-herdTheBabies('aBA') //should return 'AaB'
+```js
+herdTheBabies("aBA"); // should return 'AaB'
 ```
 
-
-```javascript
-herdTheBabies('bbaBccAC') //should return 'AaBbbCcc'
+```js
+herdTheBabies("bbaBccAC"); // should return 'AaBbbCcc'
 ```
 
-```javascript
-herdTheBabies('AaBbbBaAbAbbAbB') //should return 'AAAAaaBBBbbbbbb'
+```js
+herdTheBabies("AaBbbBaAbAbbAbB"); // should return 'AAAAaaBBBbbbbbb'
 ```

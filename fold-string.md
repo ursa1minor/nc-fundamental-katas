@@ -1,4 +1,4 @@
-## Fold string
+# Fold string
 
 The challenge is to implement a function which takes a string of any length and turns each word inside out while keeping the order of the words intact.
 
@@ -12,31 +12,29 @@ Your function should also work for strings with spaces.
 
 Remember to start testing with the most basic cases when building up your test suite.
 
-
-
 ## Examples
 
-```javascript
-foldString('code')
-// --> 'oced'
+```js
+foldString("code");
+// should return  'oced'
 ```
 
-```javascript
-foldString('abcdef')
-// --> 'cbafed';
+```js
+foldString("abcdef");
+// should return  'cbafed';
 ```
 
-```javascript
-foldString('javascript')
-// --> 'savajtpirc'
+```js
+foldString("javascript");
+// should return  'savajtpirc'
 ```
 
-```javascript
-foldString('Northcoders')
-// --> 'htroNcsredo'
+```js
+foldString("Northcoders");
+// should return 'htroNcsredo'
 ```
 
-```javascript
-foldString('javascript is cool')
-// --> 'savajtpirc is oclo'
+```js
+foldString("javascript is cool");
+// should return  'savajtpirc is oclo'
 ```

@@ -1,6 +1,6 @@
 // Please do not change the name of this function
-const changeCalculator = (num) => {
+function changeCalculator (num) {
   // Your code here
 };
 
-module.exports = { changeCalculator };
+module.exports = changeCalculator;

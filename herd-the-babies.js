@@ -3,4 +3,4 @@ function herdTheBabies (str) {
   // Your code here
 };
 
-module.exports = { herdTheBabies };
+module.exports = herdTheBabies;

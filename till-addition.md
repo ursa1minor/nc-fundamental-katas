@@ -1,8 +1,8 @@
-## Cash up the cafe's till at the end of the day
+# Cash up the cafe's till at the end of the day
 
 The challenge is to implement a function which cashes up a till at the end of the day. The function should always return a string.
 
-##### examples
+## Examples
 
 The till can contain the following denominations:
 
@@ -21,36 +21,36 @@ The till can contain the following denominations:
 
 The till contents should be a javascript object in this format:
 
-```javascript
+```js
 const till = {
-             '1p': 1,
-             '2p': 1,
-             '5p': 1,
-             '10p': 1,
-             '20p': 1,
-             '50p': 1,
-             '£1': 1,
-             '£2': 1,
-             '£5': 1,
-             '£10': 1,
-             '£20': 1,
-             '£50': 1
-           }
+  "1p": 1,
+  "2p": 1,
+  "5p": 1,
+  "10p": 1,
+  "20p": 1,
+  "50p": 1,
+  "£1": 1,
+  "£2": 1,
+  "£5": 1,
+  "£10": 1,
+  "£20": 1,
+  "£50": 1
+};
 ```
 
 You can use these examples to start building up your test suite
 
-```javascript
-    till({'1p': 1,'2p': 1});
-    // -> "£0.03"
+```js
+till({ "1p": 1, "2p": 1 });
+// should return "£0.03"
 ```
 
-```javascript
-    till({'1p': 1,'2p': 1,'5p': 1,'10p': 1,'20p': 1});
-    // -> "£0.38"
+```js
+till({ "1p": 1, "2p": 1, "5p": 1, "10p": 1, "20p": 1 });
+// should return "£0.38"
 ```
 
-```javascript
-    till({'5p': 1,'10p': 1,'20p': 1,'50p': 1,'£1': 1});
-    // -> "£1.85"
+```js
+till({ "5p": 1, "10p": 1, "20p": 1, "50p": 1, "£1": 1 });
+// should return "£1.85"
 ```

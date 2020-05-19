@@ -3,4 +3,4 @@ function sentenceToCamelCase (sentence) {
   // Your code here
 };
 
-module.exports = { sentenceToCamelCase };
+module.exports = sentenceToCamelCase;

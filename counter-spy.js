@@ -1,6 +1,6 @@
 // Please do not change the name of this function
-const counterSpy = (names) => {
+function counterSpy (names) {
   // Your code here
 };
 
-module.exports = { counterSpy };
+module.exports = counterSpy;
