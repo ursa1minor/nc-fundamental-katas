@@ -4,7 +4,7 @@ Create a function that takes a string of DNA and matches each base with its pair
 
 ## Examples
 
-Here are some examples to help you build out your test suite.
+Here are some examples below.
 
 ```js
 dnaPair("G");
