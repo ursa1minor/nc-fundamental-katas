@@ -20,9 +20,13 @@ The running order for this block's katas is:
 
 ## Instructions
 
-Each kata should be completed with full TDD. Every morning you should start a new kata, regardless of the progress you have made on the previous one! You will have a chance to review your progress with your katas in your weekly 1-to-1s. 
+Each kata should be completed with full TDD. Every morning you should start a new kata, regardless of the progress you have made on the previous one!
 
-## Setup Instructions
+The first two have console.log-based tests written already.  To run these, run the kata's file with `node`.
+
+After day #1, please write all your tests using Jest.
+
+## Initial Setup Instructions
 
 1. Fork this repository to your own GitHub account because you will be pushing your own solutions to it
 
@@ -32,6 +36,8 @@ Each kata should be completed with full TDD. Every morning you should start a ne
 $ git clone <your fork's URL>
 $ cd fun-katas
 ```
+
+## Setting up Jest
 
 3. You will need to ensure you create a `package.json` with the command `npm init -y`
 
