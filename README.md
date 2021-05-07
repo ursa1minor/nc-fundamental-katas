@@ -2,9 +2,9 @@
 
 ## Running Order
 
-The running order for this block's katas is: 
+The running order for this block's katas is:
 
-1. `dnaPairs`
+1. `dnaPairs` - we have created the test file for this one for you
 2. `calculateDivisors`
 3. `pigLatin`
 4. `sentenceToCamelCase`
@@ -22,7 +22,7 @@ The running order for this block's katas is:
 
 Each kata should be completed with full TDD. Every morning you should start a new kata, regardless of the progress you have made on the previous one!
 
-The first two have console.log-based tests written already.  To run these, run the kata's file with `node`.
+The first two have console.log-based tests written already. To run these, run the kata's file with `node`.
 
 After day #1, please write all your tests using Jest.
 
@@ -43,13 +43,12 @@ $ cd fun-katas
 
 4. You will need to install any dependencies (Jest in this case) using the `npm install -D jest` command
 
-5. You will need to update the `scripts` section of your `package.json` so you can use the `npm test` command to run tests using Jest. Remember to use the `--watch` flag in this command so Jest will watch your files for changes and then re-run the tests automatically.
+5. You will need to update the `scripts` section of your `package.json` so you can use the `npm test` command to run tests using `jest`. You can use the `--watch` flag in this command so Jest will watch your files for changes and then re-run the tests automatically.
 
-Try to spend an hour each morning working on a kata. It will give you the edge when you come to do tech tests for your job applications
+Spend an hour each morning working on a kata. It will give you the edge when you come to do tech tests for your job applications
 
 Work on the kata and commit changes as needed. When you are happy with your solution, push all your changes to your forked repo. You should push to your fork frequently but as a bare minimum please make sure it's up to date with last week's kata solutions before Monday morning each week:
 
 ```
-$ git push origin master
+$ git push origin main
 ```
-  
