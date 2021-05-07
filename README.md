@@ -20,11 +20,7 @@ The running order for this block's katas is:
 
 ## Instructions
 
-Each kata should be completed with full TDD. Every morning you should start a new kata, regardless of the progress you have made on the previous one!
-
-The first two have console.log-based tests written already. To run these, run the kata's file with `node`.
-
-After day #1, please write all your tests using Jest.
+Each kata should be completed with full TDD. Every morning you should try start a new kata, regardless of the progress you have made on the previous one!
 
 ## Initial Setup Instructions
 
