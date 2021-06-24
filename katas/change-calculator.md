@@ -22,7 +22,7 @@ changeCalculator(7);
 ```
 
 ```js
-calculateDivisors(13);
+changeCalculator(13);
 // should return {'10':1,'2':1,'1':1}
 ```
 
