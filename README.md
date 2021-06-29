@@ -39,11 +39,11 @@ $ cd fun-katas
 
 4. You will need to install any dependencies (Jest in this case) using the `npm install -D jest` command
 
-5. You will need to update the `scripts` section of your `package.json` so you can use the `npm test` command to run tests using `jest`. You can use the `--watch` flag in this command so Jest will watch your files for changes and then re-run the tests automatically.
+5. You will need to update the `scripts` section of your `package.json` so you can use the `npm test` command to run tests using `jest`. (You can choose to use the `--watch` flag in this command so Jest will watch your files for changes and then re-run the tests automatically)
 
 Spend an hour each morning working on a kata. It will give you the edge when you come to do tech tests for your job applications
 
-Work on the kata and commit changes as needed. When you are happy with your solution, push all your changes to your forked repo. You should push to your fork frequently but as a bare minimum please make sure it's up to date with last week's kata solutions before Monday morning each week:
+Work on the kata and commit changes as needed. Push all your changes to your forked repo when you finish working on the repo before the lecture. You should push to your fork frequently but as a bare minimum please make sure it's up to date with last week's kata solutions before Monday morning each week:
 
 ```
 $ git push origin main
