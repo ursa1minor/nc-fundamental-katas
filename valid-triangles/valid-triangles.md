@@ -1,8 +1,8 @@
 # Valid Triangles
 
-For this kata you need to create a function that takes an array of triangles. Each triangle is represented as an array e.g. `[10, 12, 22]` where the three numbers are the sides of the triangle. The function should return the count of triangles that are valid.
+For this kata you need to create a function that takes an array of triangles. Each triangle is represented as an array where the three numbers are the sides of the triangle e.g. `[10, 12, 22]`. The function should return the count of triangles that are valid.
 
-To be a valid triangle, the sum of any two sides must be larger than the remaining side
+The sides of the triangles must be connected at the ends. Therefore to be a valid triangle the sum of any two sides must be larger than the remaining side.
 
 ## For example
 
