@@ -38,8 +38,3 @@ getTweetData("I am #coding with @northcoders I love #coding and @northcoders");
 // should return { tags: ['#coding'], mentions: ['@northcoders'], tagCount: 1, mentionCount: 1, length: 62 }
 ```
 
-## Extra Tasks
-
-- The amount of valid URLS shared in the tweet
-- The amount of valid email addresses in the tweet
-- Twitter shrinks all urls by 50%. Take this into account when you return the tweets length

@@ -1,6 +1,6 @@
 # Change Calculator
 
-The challenge is to implement a function that calculates the coins you would use to give a customer their change in a shop. The function takes one arguments, which is the amount of change needed, in pence. The function should always return an object.
+The challenge is to implement a function that calculates the coins you would use to give a customer their change in a shop. The function takes one argument, which is the amount of change needed, in pence. The function should always return an object.
 
 ## Examples
 
@@ -25,7 +25,3 @@ changeCalculator(7);
 changeCalculator(13);
 // should return {'10':1,'2':1,'1':1}
 ```
-
-## Extra credit
-
-Set up a html file and include jQuery. Display your change solution in a html table
