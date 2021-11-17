@@ -1,4 +1,4 @@
-# Northcoders Afternoon Katas
+# Northcoders Fundamentals Katas
 
 ## Running Order
 
