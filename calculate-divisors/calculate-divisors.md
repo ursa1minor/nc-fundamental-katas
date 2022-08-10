@@ -29,6 +29,9 @@ calculateDivisors(10);
 ```
 
 ```js
-calculateDivisors(12);
+calculateDivisors(12); // 3 + 6 + 9 + 12 = 24 + 6 = 30
+// 5 + 10 = 15
+// 15 + 30 = 45
+// therefore a test answer of 33 would be incorrect.
 // should return 33
 ```
