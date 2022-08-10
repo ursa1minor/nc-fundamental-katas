@@ -15,8 +15,10 @@ function dnaPairs(dna) {
   return dnaArray;
   } else {
     for (i = 0; i < dna.length; i++) {
-      dnaArray.push([dna[i]]);
+      if (dna[i] === "G") {
+      dnaArray.push(["G", "C"]);
     }
+  }
   console.log(dnaArray);
   return dnaArray;
   }

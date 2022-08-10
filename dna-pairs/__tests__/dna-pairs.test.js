@@ -5,7 +5,7 @@ describe('dnaPairs()', () => {
     expect(dnaPairs("")).toEqual([]);
   });
   test('Single input character generates 1 nested array', () => {
-    expect(dnaPairs("A")).toEqual([["A"]]);
+    expect(dnaPairs("G")).toEqual([["G", "C"]]);
   });
   // test('input A returns nested array containing A T', () => {
   //   expect(dnaPairs("A")).toEqual([["A", "T"]]);
