@@ -1,13 +1,18 @@
 function getTweetData (tweet) {
-  const newTweet = {};
-
-  newTweet.tags = [];
-  newTweet.mentions = [];
-  newTweet.tagCount = 0;
-  newTweet.mentionCount = 0;
-  newTweet.length = tweet.length;
   
-  return newTweet;
+  const tweetData = {};
+
+  tweetData.tags = [];
+  tweetData.mentions = [];
+  tweetData.tagCount = 0;
+  tweetData.mentionCount = 0;
+  tweetData.length = tweet.length;
+
+  if (tweet.includes(" @")) {
+    tweetData.mentionCount++;
+  }
+
+  return tweetData;
 };
 
 module.exports = getTweetData;
