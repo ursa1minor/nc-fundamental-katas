@@ -8,8 +8,12 @@ function getTweetData (tweet) {
   tweetData.mentionCount = 0;
   tweetData.length = tweet.length;
 
+  
   if (tweet.includes(" @")) {
-    tweetData.mentionCount++;
+    tweetData.mentionCount++;  
+  
+  const mention = (tweet.search(" @"));
+    tweetData.mentions.push(tweet.slice(mention + 1));
   }
 
   return tweetData;

@@ -9,9 +9,12 @@ describe('getTweetData()', () => {
   });
 
   test('return tweet mention count 1 for 1 mention', () => {
-    
     const myTweet = "My awesome tweet to @northcoders";
-    
     expect(getTweetData(myTweet).mentionCount).toBe(1);
+  });
+
+  test('return tweet mentions for 1 mention', () => {
+    const myTweet = "My awesome tweet to @northcoders";
+    expect(getTweetData(myTweet).mentions).toEqual(["@northcoders"]);
   });
 });
