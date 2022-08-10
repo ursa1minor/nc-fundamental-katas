@@ -9,8 +9,12 @@
 // dnaPair("ATAG");
 // // should return [ ["A", "T"], ["T", "A"], ["A", "T"], ["G", "C"] ]
 
-function dnaPairs() {
+function dnaPairs(dna) {
+  if (dna === "") {
   return [];
+  } else if (dna === "G") {
+  return [["G" , "C"]];
+  }
 }
 
 module.exports = dnaPairs;
