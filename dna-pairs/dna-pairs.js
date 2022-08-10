@@ -16,20 +16,21 @@ function dnaPairs(dna) {
   } else {
     for (i = 0; i < dna.length; i++) {
       if (dna[i] === "G") {
-      dnaArray.push(["G", "C"]);
+        dnaArray.push(["G", "C"]);
+      } else if (dna === "C") {
+        dnaArray.push(["C" , "G"]);
+      } else if (dna === "A") {
+        dnaArray.push(["A" , "T"]);
+      } else if (dna === "T") {
+        dnaArray.push(["T" , "A"]);
     }
+    console.log(dnaArray);
+    return dnaArray;
   }
-  console.log(dnaArray);
-  return dnaArray;
-  }
+}
   // } else if (dna === "G") {
   // return [["G" , "C"]];
-  // } else if (dna === "C") {
-  // return [["C" , "G"]];
-  // } else if (dna === "A") {
-  // return [["A" , "T"]];
-  // } else if (dna === "T") {
-  // return [["T" , "A"]];
+  // } else if 
   // }
 }
 
