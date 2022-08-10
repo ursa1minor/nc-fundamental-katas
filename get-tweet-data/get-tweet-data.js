@@ -1,6 +1,13 @@
-// Please do not change the name of this function
 function getTweetData (tweet) {
-  // Your code here
+  const newTweet = {};
+
+  newTweet.tags = [];
+  newTweet.mentions = [];
+  newTweet.tagCount = 0;
+  newTweet.mentionCount = 0;
+  newTweet.length = tweet.length;
+  
+  return newTweet;
 };
 
 module.exports = getTweetData;
