@@ -8,6 +8,12 @@ function getTweetData (tweet) {
   tweetData.mentionCount = 0;
   tweetData.length = tweet.length;
 
+  if (tweet.includes("#")) {
+    tweetData.tagCount++;
+
+  const tag = (tweet.search("#"));
+    tweetData.tags.push(tweet.slice(tag));
+  }
   
   if (tweet.includes(" @")) {
     tweetData.mentionCount++;  

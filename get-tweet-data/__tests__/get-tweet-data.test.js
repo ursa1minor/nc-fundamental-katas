@@ -17,4 +17,11 @@ describe('getTweetData()', () => {
     const myTweet = "My awesome tweet to @northcoders";
     expect(getTweetData(myTweet).mentions).toEqual(["@northcoders"]);
   });
+
+  test('return tag count for 1 tag', () => {
+    const myTweet = "My awesome tweet about #coding";
+    expect(getTweetData(myTweet)).toEqual({ tags: ['#coding'], mentions: [], tagCount: 1, mentionCount: 0, length: 30 });
+  });
+
+
 });
