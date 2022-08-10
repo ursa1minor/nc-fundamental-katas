@@ -27,4 +27,10 @@ describe('getTweetData()', () => {
     const myTweet = "My awesome tweet about #coding to @northcoders";
     expect(getTweetData(myTweet)).toEqual({ tags: ['#coding'], mentions: ['@northcoders'], tagCount: 1, mentionCount: 1, length: 46 });
   });
+
+  test('return correct data for 2 mentions and 2 tags', () => {
+    const myTweet = "I am #coding with @northcoders I love #coding and @northcoders";
+    expect(getTweetData(myTweet)).toEqual({ tags: ['#coding'], mentions: ['@northcoders'], tagCount: 1, mentionCount: 1, length: 62 });
+  });
+
 });

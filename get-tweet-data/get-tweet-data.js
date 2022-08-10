@@ -8,28 +8,37 @@ function getTweetData (tweet) {
   tweetData.mentionCount = 0;
   tweetData.length = tweet.length;
 
+  // tags and tagCount
+
   if (tweet.includes("#")) {
     tweetData.tagCount++;
-
   const tagStart = (tweet.search("#")); // first char index
   const tagOne = tweet.slice(tagStart);
 
-    if (tagOne.includes(" ") === false) {
-    tweetData.tags.push(tagOne); 
-    } else {
-
-    const tagEnd = tagOne.search(" "); // space char index
-    tweetData.tags.push(tagOne.slice(0, tagEnd))
-    }
+      if (tagOne.includes(" ") === false) {
+        tweetData.tags.push(tagOne); 
+      } else {
+      const tagEnd = tagOne.search(" "); // space index
+      tweetData.tags.push(tagOne.slice(0, tagEnd))
+      }
   }
+
+  // mentions and mentionCount
   
   if (tweet.includes("@")) {
     tweetData.mentionCount++;  
   
-  const mention = (tweet.search("@"));
-    tweetData.mentions.push(tweet.slice(mention));
-  }
+  const mentionStart = (tweet.search("@")); // first char index
+  const mentionOne = tweet.slice(mentionStart);
 
+    if (mentionOne.includes(" ") === false) {
+      tweetData.mentions.push(mentionOne);
+    } else {
+      const mentionEnd = mentionOne.search(" "); // space index
+      tweetData.mentions.push(mentionOne.slice(0, mentionEnd))
+    }
+    
+  }
   return tweetData;
 };
 
