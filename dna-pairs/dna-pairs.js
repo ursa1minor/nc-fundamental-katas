@@ -10,11 +10,25 @@
 // // should return [ ["A", "T"], ["T", "A"], ["A", "T"], ["G", "C"] ]
 
 function dnaPairs(dna) {
+  const dnaArray = [];
   if (dna === "") {
-  return [];
-  } else if (dna === "G") {
-  return [["G" , "C"]];
+  return dnaArray;
+  } else {
+    for (i = 0; i < dna.length; i++) {
+      dnaArray.push([dna[i]]);
+    }
+  console.log(dnaArray);
+  return dnaArray;
   }
+  // } else if (dna === "G") {
+  // return [["G" , "C"]];
+  // } else if (dna === "C") {
+  // return [["C" , "G"]];
+  // } else if (dna === "A") {
+  // return [["A" , "T"]];
+  // } else if (dna === "T") {
+  // return [["T" , "A"]];
+  // }
 }
 
 module.exports = dnaPairs;
