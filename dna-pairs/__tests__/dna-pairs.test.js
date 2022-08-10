@@ -8,6 +8,9 @@ describe('dnaPairs()', () => {
     expect(dnaPairs("G")).toEqual([["G", "C"]]);
   });
   test('input AG returns 2 nested arrays', () => {
-    expect(dnaPairs("AG")).toEqual([["A", "T"]["G", "C"]]);
+    expect(dnaPairs("AG")).toEqual([["A", "T"], ["G", "C"]]);
+  });
+  test('input ATAG returns 4 nested arrays', () => {
+    expect(dnaPairs("ATAG")).toEqual([["A", "T"], ["T", "A"], ["A", "T"], ["G", "C"]]);
   });
 });

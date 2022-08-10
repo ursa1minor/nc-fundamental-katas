@@ -15,23 +15,11 @@ function dnaPairs(dna) {
   return dnaArray;
   } else {
     for (i = 0; i < dna.length; i++) {
-      if (dna[i] === "G") {
-        dnaArray.push(["G", "C"]);
-      } else if (dna === "C") {
-        dnaArray.push(["C" , "G"]);
-      } else if (dna === "A") {
-        dnaArray.push(["A" , "T"]);
-      } else if (dna === "T") {
-        dnaArray.push(["T" , "A"]);
-    }
-    console.log(dnaArray);
-    return dnaArray;
+      if      (dna[i] === "G") {dnaArray.push(["G", "C"]);} 
+      else if (dna[i] === "C") {dnaArray.push(["C" , "G"]);} else if (dna[i] === "A") {dnaArray.push(["A" , "T"]);} else if (dna[i] === "T") {dnaArray.push(["T" , "A"]);}
   }
+  return dnaArray;
 }
-  // } else if (dna === "G") {
-  // return [["G" , "C"]];
-  // } else if 
-  // }
 }
 
 module.exports = dnaPairs;
