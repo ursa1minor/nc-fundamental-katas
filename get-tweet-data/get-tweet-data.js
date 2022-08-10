@@ -11,15 +11,23 @@ function getTweetData (tweet) {
   if (tweet.includes("#")) {
     tweetData.tagCount++;
 
-  const tag = (tweet.search("#"));
-    tweetData.tags.push(tweet.slice(tag));
+  const tagStart = (tweet.search("#")); // first char index
+  const tagOne = tweet.slice(tagStart);
+
+    if (tagOne.includes(" ") === false) {
+    tweetData.tags.push(tagOne); 
+    } else {
+
+    const tagEnd = tagOne.search(" "); // space char index
+    tweetData.tags.push(tagOne.slice(0, tagEnd))
+    }
   }
   
-  if (tweet.includes(" @")) {
+  if (tweet.includes("@")) {
     tweetData.mentionCount++;  
   
-  const mention = (tweet.search(" @"));
-    tweetData.mentions.push(tweet.slice(mention + 1));
+  const mention = (tweet.search("@"));
+    tweetData.mentions.push(tweet.slice(mention));
   }
 
   return tweetData;
