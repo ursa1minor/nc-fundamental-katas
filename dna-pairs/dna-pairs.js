@@ -22,4 +22,5 @@ function dnaPairs(dna) {
 }
 }
 
+
 module.exports = dnaPairs;
