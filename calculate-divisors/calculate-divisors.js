@@ -12,28 +12,19 @@ function calculateDivisors(num) {
   for (i = 1; i <= numDivBy3; i++) {
     threes.push(i * 3);
   }
-  //console.log(threes);
-  
+  //console.log(threes); 
   for (i = 0; i < threes.length; i++) {
     threeSum = threeSum + threes[i];
   }
-
-  console.log(threeSum);
-
+  //console.log(threeSum);
   for (i = 1; i <= numDivBy5; i++) {
     fives.push(i * 5);
   }
   //console.log(fives)
-
   for (i = 0; i < fives.length; i++) {
     fiveSum = fiveSum + fives[i];
   }
-
   return (threeSum + fiveSum);
-
-
 }
-
-
 
 module.exports = calculateDivisors;
