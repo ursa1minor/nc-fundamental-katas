@@ -25,5 +25,16 @@ describe("calculateDivisors function tests", () => {
 	test("input 12 returns 45", () => {
 		expect(calculateDivisors(12)).toBe(45);
 	});
+	test("input 15 returns 45", () => {
+		expect(calculateDivisors(15)).toBe(75);
+	});
+
+// 5 + 10 + 15 = 30
+
+	// 3 + 6 = 9
+	// 9 + 12 = 21
+// 9 + 21 + 15 = 45
+
+// total 75
 
 });

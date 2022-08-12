@@ -1,4 +1,5 @@
-// function adds all multiples of three and five **below** a certain number
+//function adds all multiples of three 
+//and five **below** a certain number
 
 function calculateDivisors(num) {
   const numDivBy3 = num/3
@@ -12,15 +13,12 @@ function calculateDivisors(num) {
   for (i = 1; i <= numDivBy3; i++) {
     threes.push(i * 3);
   }
-  //console.log(threes); 
   for (i = 0; i < threes.length; i++) {
     threeSum = threeSum + threes[i];
   }
-  //console.log(threeSum);
   for (i = 1; i <= numDivBy5; i++) {
     fives.push(i * 5);
   }
-  //console.log(fives)
   for (i = 0; i < fives.length; i++) {
     fiveSum = fiveSum + fives[i];
   }
