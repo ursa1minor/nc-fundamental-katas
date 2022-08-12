@@ -13,4 +13,7 @@ describe('dnaPairs()', () => {
   test('input ATAG returns 4 nested arrays', () => {
     expect(dnaPairs("ATAG")).toEqual([["A", "T"], ["T", "A"], ["A", "T"], ["G", "C"]]);
   });
+  test('input ATAG returns 4 nested arrays', () => {
+    expect(dnaPairs("CATAG")).toEqual([["C", "G"], ["A", "T"], ["T", "A"], ["A", "T"], ["G", "C"]]);
+  });
 });
