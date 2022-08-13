@@ -1,7 +1,8 @@
-// Function cashes up a till at the end of the day. return a string.
+// Function cashes up a till at the end of the day. 
+// return a string.
 
 // The till can contain the following denominations:
-// 1p piece 2p piece 5p piece 10p piece 20p piece 50p piece £1 coin £2 coin £5 note £10 note £20 note £50 note
+// 1p 2p 5p 10p 20p 50p £1 £2 £5 £10 £20 £50
 
 // The till contents should be a javascript object in this format:
 // till({ "1p": 1, "2p": 1 }); should return "£0.03"
@@ -79,7 +80,6 @@ for (i = 0; i < sumArray.length; i++)  {
 }
 
 const result = sum.toString();
-console.log(result);
 
 if (result.length === 1) {
   return `£0.0${result}`;
@@ -89,7 +89,6 @@ if (result.length === 2) {
 }
 if (result.length > 2) {
   return `£${result.slice(0, -2)}.${result.slice(-2)}`
-}  
-};
+}};
 
 module.exports = tillAddition;
