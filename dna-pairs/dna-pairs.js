@@ -6,14 +6,30 @@
 // // should return [ ["A", "T"], ["G", "C"] ]
 
 function dnaPairs(dna) {
+  
   const dnaArray = [];
-  if (dna === "") {
-  return dnaArray;
+  let x;
+  let y;
+
+  if (dna.length === 0) {
+    return dnaArray;
   } else {
-    for (i = 0; i < dna.length; i++) {
-      if      (dna[i] === "G") {dnaArray.push(["G", "C"]);} 
-      else if (dna[i] === "C") {dnaArray.push(["C" , "G"]);} else if (dna[i] === "A") {dnaArray.push(["A" , "T"]);} else if (dna[i] === "T") {dnaArray.push(["T" , "A"]);}
+  for (x = 0; x < dna.length; x++) { 
+  if (dna[x] === "G") {y = "C"};
+  if (dna[x] === "C") {y = "G"};
+  if (dna[x] === "A") {y = "T"};
+  if (dna[x] === "T") {y = "A";};
+    
+  dnaArray.push([dna[x], y]);
   }
   return dnaArray;
+
+  //   for (i = 0; i < dna.length; i++) {
+  //     if      (dna[i] === "G") {dnaArray.push(["G", "C"]);} 
+  //     else if (dna[i] === "C") {dnaArray.push(["C" , "G"]);} 
+  //     else if (dna[i] === "A") {dnaArray.push(["A" , "T"]);} 
+  //     else if (dna[i] === "T") {dnaArray.push(["T" , "A"]);}
+  // }
+  // return dnaArray;
 }}
 module.exports = dnaPairs;
