@@ -21,6 +21,18 @@ describe("changeCalculator function tests", () => {
 	const testCalc = changeCalculator;
 	expect(testCalc(1)).toEqual({'1': 1});
 	});	
-
-
+	test('should return correct data when passed 2', () => {
+	const testCalc = changeCalculator;
+	expect(testCalc(2)).toEqual({'2': 1});		
+	});
+	test('should return correct data when passed 5', () => {
+	const testCalc = changeCalculator;
+	expect(testCalc(5)).toEqual({'5': 1});		
+		});
+	test('should return correct data when passed 47', () => {
+	const testCalc = changeCalculator;
+	expect(testCalc(47)).toEqual({'20': 2, '5': 1, '2': 1});		
+	});
 });
+
+
