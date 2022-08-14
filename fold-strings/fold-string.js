@@ -14,9 +14,9 @@ function foldString (str) {
 
 if (str.includes(" ") === false) {
 
-if (str === "" || str.length === 1) {
+  if (str === "" || str.length === 1) {
   return str;
-} else {
+  } else {
 
   const str1 = str.substring(0, Math.floor(str.length/2));
   const str2 = str.substring(Math.ceil(str.length/2));
@@ -28,7 +28,32 @@ if (str === "" || str.length === 1) {
   if (str.length%2 === 1)
   {return rev1.join('') + strMid + rev2.join('');} else 
   return rev1.join('') + rev2.join('');
-}}}
+}
+} else {
+  const strArray = str.split(' ');
+  const newArray = [];
+  for (let word of strArray) {
+      let newWord;
+      const word1 = word.substring(0, Math.floor(word.length/2));
+      const word2 = word.substring(Math.ceil(word.length/2));
+      const word1Array = word1.split('');
+      const word2Array = word2.split('');
+      const wordMid = word[Math.floor(str.length/2)];
+      const wordRev1 = word1Array.reverse();
+      const wordRev2 = word2Array.reverse()
+      
+      if (word.length%2 === 1)
+      {newWord = wordRev1.join('') + wordMid + wordRev2.join('');} else 
+      newWord = wordRev1.join('') + wordRev2.join('');
+
+      newArray.push(newWord);
+  }
+  console.log(newArray.join(' '));
+  return newArray.join(' ');
+}
+
+
+}
 
 // function foldString (str) {
 

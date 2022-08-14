@@ -16,9 +16,9 @@ const foldString = require('../fold-strings/fold-string.js');
 // should return  'savajtpirc is oclo'
 
 
-describe("sentenceToCamelCase function tests", () => {
+describe("foldString function tests", () => {
 	test("returns empty string when passed empty string", () => {
-		expect(foldString(" ")).toBe(" ");
+		expect(foldString("")).toBe("");
 	});	
 	test("returns string when passed string of length 1", () => {
 		expect(foldString("a")).toBe("a");
