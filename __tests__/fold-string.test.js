@@ -23,5 +23,20 @@ describe("sentenceToCamelCase function tests", () => {
 	test("returns string when passed string of length 1", () => {
 		expect(foldString("a")).toBe("a");
 	});	
+	test("returns folded string when passed string of length 4", () => {
+		expect(foldString("code")).toBe("oced");
+	});
+	test("returns folded string when passed string of length 5", () => {
+		expect(foldString("abcde")).toBe("baced");
+	});
+	test("returns folded string when passed string of length 6", () => {
+		expect(foldString("abcdef")).toBe("cbafed");
+	});
+	test("returns correctly folded string when passed Northcoders", () => {
+		expect(foldString("Northcoders")).toBe("htroNcsredo");
+	});
+	test("returns correctly folded string when passed string with spaces", () => {
+		expect(foldString("javascript is cool")).toBe("savajtpirc is oclo");
+	});
 
 });
