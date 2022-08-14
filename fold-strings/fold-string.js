@@ -12,27 +12,54 @@
 
 function foldString (str) {
 
-if (str === " " || str.length === 1) {
+if (str.includes(" ") === false) {
+
+if (str === "" || str.length === 1) {
   return str;
 } else {
-if (str.length%2 === 0) {
-  let str1 = str.substring(0, str.length/2);
-  let str2 = str.substring(str.length/2);
-  let str1Array = str1.split('');
-  let str2Array = str2.split('');
-  let rev1 = str1Array.reverse();
-  let rev2 = str2Array.reverse()
-  return rev1.join('') + rev2.join('')
-} else {
-  let str1 = str.substring(0, Math.floor(str.length/2));
-  let str2 = str.substring(Math.ceil(str.length/2));
-  let str1Array = str1.split('');
-  let str2Array = str2.split('');
-  let strMid = str[Math.floor(str.length/2)];
-  let rev1 = str1Array.reverse();
-  let rev2 = str2Array.reverse()
-  return rev1.join('') + strMid + rev2.join('');
-}
-}}
+
+  const str1 = str.substring(0, Math.floor(str.length/2));
+  const str2 = str.substring(Math.ceil(str.length/2));
+  const str1Array = str1.split('');
+  const str2Array = str2.split('');
+  const strMid = str[Math.floor(str.length/2)];
+  const rev1 = str1Array.reverse();
+  const rev2 = str2Array.reverse()
+  if (str.length%2 === 1)
+  {return rev1.join('') + strMid + rev2.join('');} else 
+  return rev1.join('') + rev2.join('');
+}}}
+
+// function foldString (str) {
+
+//   if (str.includes(" ") === false) {
+  
+//   if (str === "" || str.length === 1) {
+//     return str;
+//   } else {
+//   if (str.length%2 === 0) {
+//     let str1 = str.substring(0, str.length/2);
+//     let str2 = str.substring(str.length/2);
+//     let str1Array = str1.split('');
+//     let str2Array = str2.split('');
+//     let rev1 = str1Array.reverse();
+//     let rev2 = str2Array.reverse()
+//     return rev1.join('') + rev2.join('')
+//   } else {
+//     let str1 = str.substring(0, Math.floor(str.length/2));
+//     let str2 = str.substring(Math.ceil(str.length/2));
+//     let str1Array = str1.split('');
+//     let str2Array = str2.split('');
+//     let strMid = str[Math.floor(str.length/2)];
+//     let rev1 = str1Array.reverse();
+//     let rev2 = str2Array.reverse()
+//     return rev1.join('') + strMid + rev2.join('');
+//   }
+//   }}}
+  
+
+
+
+
 
 module.exports = foldString
