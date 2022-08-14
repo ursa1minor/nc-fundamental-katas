@@ -3,34 +3,22 @@
 // function takes one argument, which is the amount of change 
 // needed, in pence; should always return an object.
 
+
 function changeCalculator (num) {
-  const coins = {
-    '1': 0,
-    '2': 0,
-    '5': 0,
-    '10': 0,
-    '20': 0,
-    '50': 0,
-    '100': 0,
-    '200': 0,
-};
-  const change = {};
 
+  const coins = {};
+  const coinArray = [200, 100, 50, 20, 10, 5, 2, 1];
 
-if (num === 1) {coins['1'] = 1;}
-if (num === 2) {coins['2'] = 1;}
-
-for (let key in coins) {
-  if (coins[key] !== 0) {
-    change[key] = coins[key]; 
-console.log(key);
-console.log(coins[key]);
-console.log(change);
+while (num > 1) {
+  let found = coinArray.find(x => x < num); //50, 10, 2
+  let foundDiv = Math.floor(num/found); 
+  coins[found] = foundDiv; 
+  num = num%found;
   }
+  if (num === 1) {coins["1"] = 1;}
+  
+console.log(coins);
+return coins;
 }
-console.log(change);
-return change;
-  }
-
 
 module.exports = changeCalculator;
