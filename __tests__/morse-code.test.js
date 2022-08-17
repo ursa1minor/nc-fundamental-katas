@@ -25,9 +25,9 @@ describe('morseCode()', () => {
   test('single character is output correctly', () => {
     expect(morseCode("....")).toBe("H");
   });
-//   test('HI is output correctly from morse code H and I', () => {
-//     expect(morseCode(".... ..")).toBe("HI");
-//   });
+  test('HI is output correctly from morse code H and I', () => {
+    expect(morseCode(".... ..")).toBe("HI");
+  });
   
 
 });

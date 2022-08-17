@@ -43,27 +43,27 @@ function decodeMorseChar (str) {
   const morseArray = Object.values(morse);
   const charArray = Object.keys(morse);
   
-  const n = morseArray.findIndex(str);
-  return charArray[n];
-
+  if (morseArray.includes(str)) {
+    const i = morseArray.indexOf(str);
+    return charArray[i];
   }
+}
 
 
 function morseCode (str) {
   if (str.length === 0) {
     return "";
+  } else if (str.includes(" ") === false) {
+    return decodeMorseChar(str);
   } else {
-    const morseArray = Object.values(morse);
-    const charArray = Object.keys(morse);
-    //console.log(morseArray)
-    //console.log(charArray)
-    
-    if (morseArray.includes(str)) {
-      const i = morseArray.indexOf(str);
-      return charArray[i];
-    }
-  
+    const morseChars = str.split(" "); // array
+    console.log(morseChars)
+    const englishChars = morseChars.map(char => decodeMorseChar(char));
+    console.log(englishChars)
+    return englishChars.join("");
   }
-};
+
+  
+  };
 
 module.exports = {morseCode, decodeMorseChar};
