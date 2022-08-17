@@ -49,21 +49,32 @@ function decodeMorseChar (str) {
   }
 }
 
+function decodeMorseWord (str) {
+  const morseChars = str.split(" "); // char array
+        const englishChars = morseChars.map(char => decodeMorseChar(char));
+      return englishChars.join("");
+}
+
 
 function morseCode (str) {
   if (str.length === 0) {
     return "";
-  } else if (str.includes(" ") === false) {
+
+  } else if (str.includes(" ") === false) { // single char
     return decodeMorseChar(str);
-  } else {
-    const morseChars = str.split(" "); // array
-    console.log(morseChars)
-    const englishChars = morseChars.map(char => decodeMorseChar(char));
-    console.log(englishChars)
-    return englishChars.join("");
+
+  } else if (str.includes(" ")) { 
+    
+      if (str.includes("   ") === false) { // single word
+      return decodeMorseWord(str);
+      
+      } else {                                // sentence
+        const morseWords = str.split("   "); // word array
+        const englishWords = morseWords.map( word => decodeMorseWord(word));
+        const englishSentence = englishWords.join(" ");
+        return englishSentence;
+      }
   }
+};
 
-  
-  };
-
-module.exports = {morseCode, decodeMorseChar};
+module.exports = morseCode;
