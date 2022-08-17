@@ -4,9 +4,10 @@
 
 function rotateArray (arr, num) {
 
-  if (arr.length === 0) {
-  return [];
+  if (arr.length === 0 || num === 0) {
+  return arr;
   }
+
 };
 
 module.exports =  rotateArray;

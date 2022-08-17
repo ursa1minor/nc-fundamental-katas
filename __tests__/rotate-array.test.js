@@ -1,11 +1,5 @@
 const rotateArray = require('../rotate-array/rotate-array.js');
 
-//- If number zero return the array unchanged
-
-//rotateArray([1, 2, 3], 0);
-// should return [1,2,3]
-
-
 // - If number positive return the array rotated x times to the right
 
 
@@ -28,6 +22,9 @@ const rotateArray = require('../rotate-array/rotate-array.js');
 describe("rotateArray function tests", () => {
 	test("returns an array", () => {
 		expect(rotateArray([], 0)).toEqual([]);
+	});	
+	test("returns an array", () => {
+		expect(rotateArray([1, 2, 3], 0)).toEqual([1, 2, 3]);
 	});	
 
 });
