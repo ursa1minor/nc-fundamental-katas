@@ -24,4 +24,4 @@ function littlePig(str) {
   } 
 }
 
-module.exports = {pigLatin, littlePig};
+module.exports = pigLatin;

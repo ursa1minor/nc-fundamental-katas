@@ -1,4 +1,4 @@
-const {pigLatin, littlePig} = require('../pig-latin/pig-latin.js');
+const pigLatin = require('../pig-latin/pig-latin.js');
 
 describe('pigLatin()', () => {
   test('empty string returns empty string', () => {
