@@ -5,14 +5,23 @@
 function pigLatin(str) {
   if (str.length === 0) {
     return "";}
-    console.log(str[0]);
   
- if (str.startsWith("a" || "e" || "i" || "o" || "u")) {
+  if (str.includes(" ")) {
+    const words = str.split(" "); //array
+    const pigWords = words.map(word => littlePig(word)); //array
+    return pigWords.join(" ");
+
+  } else {
+  return littlePig(str);
+}}
+
+function littlePig(str) {
+  if (str.startsWith("a") || str.startsWith("e") || str.startsWith("i") || str.startsWith("o") || str.startsWith("u")) {
     return (str + "way");
-}
-if (str.startsWith("a" || "e" || "i" || "o" || "u") === false) {
+  }
+  if (str.startsWith("a" || "e" || "i" || "o" || "u") === false) {
   return (str.substring(1) + str[0] + "ay");
-} 
+  } 
 }
 
-module.exports = pigLatin
+module.exports = {pigLatin, littlePig};

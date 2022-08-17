@@ -1,17 +1,4 @@
-
-//pigLatin("northcoders");
-// should return 'orthcodersnay'
-
-//sample("sheffield");
-// should return 'effieldshay'
-
-//sample("algorithm");
-// should return 'algorithmway'
-
-//sample("keep on coding");
-// should return 'eepkay onway odingcay'
-
-const pigLatin = require('../pig-latin/pig-latin.js');
+const {pigLatin, littlePig} = require('../pig-latin/pig-latin.js');
 
 describe('pigLatin()', () => {
   test('empty string returns empty string', () => {
@@ -22,6 +9,12 @@ describe('pigLatin()', () => {
   });
   test('string starts with vowel, returns string ending in first letter + way', () => {
     expect(pigLatin("algorithm")).toBe("algorithmway");
+  });
+  test('string starts with vowel, returns string ending in first letter + way', () => {
+    expect(pigLatin("on")).toBe("onway");
+  });
+  test('string of words returns each word as pig Latin', () => {
+    expect(pigLatin("keep on coding")).toBe("eepkay onway odingcay")
   });
 
 });
