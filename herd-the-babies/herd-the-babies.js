@@ -4,21 +4,42 @@ function herdTheBabies (str) {
     return str;
   } else {
 
-  const charCodeArray = [];
+  const charArray = [];
+
+  let upperCode = 65;
+  let lowerCode = 97;
 
   for (let i = 0; i < str.length; i++) {
-    charCodeArray.push(str.charCodeAt(i))
-  }
-  charCodeArray.sort();
+    if (str.charCodeAt(i) === upperCode) {
+      charArray.push(str[i])
+    }}
 
-  console.log(charCodeArray);
+  for (let i = 0; i < str.length; i++) {
+    if (str.charCodeAt(i) === lowerCode) {
+      charArray.push(str[i])   
+    }}
+  
+  for (let i = 0; i < str.length; i++) {
+    if (str.charCodeAt(i) === upperCode + 1) {
+      charArray.push(str[i])
+      }}
+  
+  for (let i = 0; i < str.length; i++) {
+    if (str.charCodeAt(i) === lowerCode + 1) {
+      charArray.push(str[i])
+      }}
 
-  const charArray = charCodeArray.map(x => String.fromCharCode(x));
-
-  console.log(charArray);
+  for (let i = 0; i < str.length; i++) {
+    if (str.charCodeAt(i) === upperCode + 2) {
+      charArray.push(str[i])
+        }}
+    
+  for (let i = 0; i < str.length; i++) {
+    if (str.charCodeAt(i) === lowerCode + 2) {
+      charArray.push(str[i])      
+        }}
 
   const newStr = charArray.join("")
-
   return newStr;
 };
 };
