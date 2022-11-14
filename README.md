@@ -2,7 +2,7 @@
 
 ## Running Order
 
-1. `dnaPairs` - we have created the test file for this one for you
+1. `dnaPairs`
 2. `getTweetData` 
 3. `calculateDivisors` 
 4. `tillAddition` 
