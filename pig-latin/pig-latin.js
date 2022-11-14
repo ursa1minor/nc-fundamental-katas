@@ -1,10 +1,10 @@
-// function that translates English strings into Pig Latin.
+// Translate English strings into Pig Latin.
 
 // To translate to [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin) you take the first consonant (or consecutive consonants) of each word, move it to the end and also append 'ay'. If the word starts with a vowel, just append 'way' at the end.
 
 function pigLatin(str) {
   if (str.length === 0) {     
-    return "";}
+    return ""}
   
   if (str.includes(" ")) {    //sentence
     const words = str.split(" "); //array
@@ -13,15 +13,15 @@ function pigLatin(str) {
 
   } else {                    //single word
   return pigWord(str);
-}}
+}};
 
 function pigWord(str) {     
   if (str.startsWith("a") || str.startsWith("e") || str.startsWith("i") || str.startsWith("o") || str.startsWith("u")) {
     return (str + "way");
-  }
+  };
   if (str.startsWith("a" || "e" || "i" || "o" || "u") === false) {
   return (str.substring(1) + str[0] + "ay");
-  } 
-}
+  }; 
+};
 
 module.exports = pigLatin;

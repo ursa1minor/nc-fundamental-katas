@@ -1,5 +1,5 @@
-// The challenge is to implement a function which decodes a morse code string!
-// The morse code will have a space between each letter and three between each word
+// Implement a function which decodes a morse code string!
+// There is a space between each letter and three between each word
 
 const morse = {
   A : ".-",
@@ -46,15 +46,14 @@ function decodeMorseChar (str) {
   if (morseArray.includes(str)) {
     const i = morseArray.indexOf(str);
     return charArray[i];
-  }
-}
+  };
+};
 
 function decodeMorseWord (str) {
   const morseChars = str.split(" "); // char array
         const englishChars = morseChars.map(char => decodeMorseChar(char));
       return englishChars.join("");
-}
-
+};
 
 function morseCode (str) {
   if (str.length === 0) {

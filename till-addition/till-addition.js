@@ -1,14 +1,5 @@
-// Function cashes up a till at the end of the day. 
-// return a string.
-
-// The till can contain the following denominations:
-// 1p 2p 5p 10p 20p 50p £1 £2 £5 £10 £20 £50
-
-// The till contents should be a javascript object in this format:
-// till({ "1p": 1, "2p": 1 }); should return "£0.03"
-
-// input is object -> output is string
-// find key pairs, get number value for each, sum and convert to string
+// Function cashes up a till at the end of the day - return a string.
+// Till can contain the following denominations: 1p 2p 5p 10p 20p 50p £1 £2 £5 £10 £20 £50
 
 function tillAddition (cash) {
 
