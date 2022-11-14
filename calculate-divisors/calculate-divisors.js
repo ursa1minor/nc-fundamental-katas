@@ -1,5 +1,4 @@
-//function adds all multiples of three 
-//and five **below** a certain number
+//function adds all multiples of three and five **below** a certain number
 
 function calculateDivisors(num) {
   const numDivBy3 = num/3

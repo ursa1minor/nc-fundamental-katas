@@ -1,11 +1,5 @@
-// function takes string of any length and turns each word inside out while keeping the order of the words intact.
-
-// To turn a word inside out the internal letters will move out, and the external letters move toward the centre.
-
-// If the word is even length, all letters will move.
-
-// If the length is odd, leave the 'middle' letter of the word where it is.
-
+// Takes string and turns each word inside out while keeping the order of the words intact.
+// Internal letters will move out, and external letters move toward the centre.
 // Function should also work for strings with spaces.
 
 function foldWord (str) {
@@ -30,10 +24,10 @@ function foldString (str) {
     return str;
   } 
 
-  if (str.includes(" ") === false) { //not a sentence
+  if (str.includes(" ") === false) { 
     return foldWord(str);
   } 
-  if (str.includes(" ")) { // is a sentence
+  if (str.includes(" ")) { 
     const strArray = str.split(' ');
     const newArray = strArray.map( word => foldWord(word));
     return newArray.join(" ");

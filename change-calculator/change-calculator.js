@@ -1,7 +1,5 @@
-// function that calculates the coins you would use to 
-// give a customer their change in a shop. 
-// function takes one argument, which is the amount of change 
-// needed, in pence; should always return an object.
+// calculates coins used to give change in a shop. 
+// takes 1 argument = amount of change in pence; always returns an object.
 
 
 function changeCalculator (num) {
@@ -11,14 +9,13 @@ function changeCalculator (num) {
 
   while (num > 1) {
     let found = coinArray.find(x => x <= num); 
-    //console.log(found, "<---");
+
     let foundDiv = Math.floor(num/found); 2/1
     coins[found] = foundDiv; 
     num = num%found;
     }
     if (num === 1) {coins["1"] = 1;}
     
-  //console.log(coins);
   return coins;
 }
 
