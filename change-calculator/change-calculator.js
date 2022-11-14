@@ -18,7 +18,7 @@ function changeCalculator (num) {
     }
     if (num === 1) {coins["1"] = 1;}
     
-  console.log(coins);
+  //console.log(coins);
   return coins;
 }
 

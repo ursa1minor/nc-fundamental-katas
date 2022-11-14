@@ -38,10 +38,11 @@ function herdTheBabies (str) {
     if (str.charCodeAt(i) === lowerCode + 2) {
       charArray.push(str[i])      
         }}
-
+  
   const newStr = charArray.join("")
   return newStr;
 };
-};
+}
+
 
 module.exports = herdTheBabies;

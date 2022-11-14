@@ -1,3 +1,4 @@
+
 # Change Calculator
 
 The challenge is to implement a function that calculates the coins you would use to give a customer their change in a shop. The function takes one argument, which is the amount of change needed, in pence. The function should always return an object.
