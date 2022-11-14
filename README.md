@@ -14,7 +14,7 @@
 10. `rotateArray` 
 11. `herdTheBabies` 
 
-Each kata should be completed with full TDD.
+Each kata completed with full TDD.
 
 ## Setting up Jest
 
